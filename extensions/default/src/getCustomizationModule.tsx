@@ -169,7 +169,7 @@ export default function getCustomizationModule({ servicesManager, extensionManag
           id: 'studyBrowser.sortFunctions',
           values: [
             {
-              label: 'Numero da serie',
+              label: 'Número da série',
               sortFunction: (a, b) => {
                 return a?.SeriesNumber - b?.SeriesNumber;
               },

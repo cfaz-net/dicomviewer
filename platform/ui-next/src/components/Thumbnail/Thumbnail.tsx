@@ -176,12 +176,12 @@ const Thumbnail = ({
           </div>
         </div>
         <div className="mt-3 flex h-[52px] w-[128px] flex-col">
-          <div className="min-h-[18px] w-[128px] overflow-hidden text-ellipsis pb-0.5 pl-1 text-[12px] font-normal leading-4 text-black">
+          <div className="min-h-[18px] w-[128px] overflow-hidden text-ellipsis pb-0.5 pl-1 text-[12px] font-normal leading-4 text-white">
             {description}
           </div>
           <div className="flex h-[12px] items-center gap-[7px] overflow-hidden">
-            <div className="text-black pl-1 text-[11px]"> S:{seriesNumber}</div>
-            <div className="text-black text-[11px]">
+            <div className="text-white pl-1 text-[11px]"> S:{seriesNumber}</div>
+            <div className="text-white text-[11px]">
               <div className="flex items-center gap-[4px]">
                 {countIcon ? (
                   React.createElement(Icons[countIcon] || Icons.MissingIcon, { className: 'w-3' })
@@ -315,7 +315,7 @@ const Thumbnail = ({
     <div
       className={classnames(
         className,
-        'bg-muted hover:bg-primary/30 group flex cursor-pointer select-none flex-col rounded outline-none',
+        'bg-secondary-dark hover:bg-accent group flex cursor-pointer select-none flex-col rounded outline-none',
         viewPreset === 'thumbnails' && 'h-[170px] w-[135px]',
         viewPreset === 'list' && 'col-span-2 h-[40px] w-[275px]'
       )}
