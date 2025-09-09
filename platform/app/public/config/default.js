@@ -21,7 +21,41 @@ window.config = {
   },
   extensions: [],
   modes: [],
-  customizationService: {},
+  customizationService: {
+    'viewportOverlay.bottomLeft': {
+      //O push duplica valores, então é necessário filtrar os personalizados para remover os duplicados
+      $filter: overlay =>
+        !['ImageLateralityOverlay', 'PatientPositionOverlay', 'ViewPositionOverlay'].includes(
+          overlay.id
+        ) || overlay.custom,
+      $push: [
+        {
+          id: 'ImageLateralityOverlay',
+          inheritsFrom: 'ohif.overlayItem',
+          attribute: 'ImageLaterality',
+          color: 'orange',
+          condition: ({ instance }) => instance && instance.ImageLaterality,
+          contentF: ({ instance }) => instance.ImageLaterality || '',
+        },
+        {
+          id: 'PatientPositionOverlay',
+          inheritsFrom: 'ohif.overlayItem',
+          attribute: 'PatientPosition',
+          color: 'orange',
+          condition: ({ instance }) => instance && instance.PatientPosition,
+          contentF: ({ instance }) => instance.PatientPosition || '',
+        },
+        {
+          id: 'ViewPositionOverlay',
+          inheritsFrom: 'ohif.overlayItem',
+          attribute: 'ViewPosition',
+          color: 'orange',
+          condition: ({ instance }) => instance && instance.ViewPosition,
+          contentF: ({ instance }) => instance.ViewPosition || '',
+        },
+      ],
+    },
+  },
   showStudyList: true,
   // some windows systems have issues with more than 3 web workers
   maxNumberOfWebWorkers: 3,
