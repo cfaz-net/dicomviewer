@@ -1,11 +1,22 @@
 {
+  "Back to": "Voltar para {{location}}",
   "Close": "Fechar",
   "Image": "Imagem",
   "Layout": "Layout",
+  "LOAD": "CARREGAR",
+  "Measurements": "Medidas",
+  "mm": "mm",
   "More": "Mais",
   "Next": "Próximo",
+  "No": "Não",
+  "NoStudyDate": "Sem Data do Estudo",
   "Play": "Play",
   "Previous": "Anterior",
   "Reset": "Restaurar",
-  "Stop": "Stop"
+  "RowsPerPage": "Linhas por Página",
+  "Series": "Série",
+  "Show": "Mostrar",
+  "Stop": "Stop",
+  "StudyDate": "Data do Estudo",
+  "Yes": "Sim"
 }

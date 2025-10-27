@@ -1,5 +1,6 @@
 {
   "Cancel": "Cancelar",
+  "No hotkeys found": "Nenhum atalho configurado para esta aplicação. Atalhos podem ser configurados no arquivo app-config.js da aplicação.",
   "Reset to defaults": "$t(Common:Reset) para Padrão",
   "ResetDefaultMessage": "Preferências resetadas com sucesso. <br /> Você deve <strong>Salvar</strong> para que essa ação seja realizada.",
   "Save": "Salvar",

@@ -9,6 +9,12 @@
   "Relabel": "Renomear",
   "Targets": "Targets",
   "Track measurements for this series?": "Acompanhar medições para esta série?",
+  "Do you want to add this measurement to the existing report?": "Deseja adicioanr essa medida ao laudo existente?",
+  "You have existing tracked measurements. What would you like to do with your existing tracked measurements?": "Você já tem medidas rastreadas existentes. O que você deseja fazer com suas medidas rastreadas existentes?",
+  "Measurements cannot span across multiple studies. Do you want to save your tracked measurements?": "Medidas não podem abranger mais de um estudo. Deseja salvar suas medidas rastreadas?",
+  "Do you want to continue tracking measurements for this study?": "Deseja continuar rastreando as medidas para este estudo?",
+  "Do you want to open this Segmentation?": "Deseja abrir esta segmentação?",
+  "There are unsaved measurements. Do you want to save it?": "Existem medidas não salvas. Você quer salvá-las?",
   "No tracked measurements": "Nenhuma medição rastreada",
   "Export": "Exportar",
   "Create Report": "Criar relatório"
