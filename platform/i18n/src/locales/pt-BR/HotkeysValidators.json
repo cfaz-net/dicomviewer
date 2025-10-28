@@ -1,0 +1,6 @@
+{
+  "Field can't be empty": "Campo não pode ficar em branco",
+  "Hotkey is already in use": "Atalho \"{{pressedKeys}}\" já esta sendo usado pela ação \"{{action}}\".",
+  "It's not possible to define only modifier keys (ctrl, alt and shift) as a shortcut": "Não é possível definir somente ctrl, alt e shift como atalhos",
+  "Shortcut combination is not allowed": "{{pressedKeys}} é uma combinação inválida"
+}

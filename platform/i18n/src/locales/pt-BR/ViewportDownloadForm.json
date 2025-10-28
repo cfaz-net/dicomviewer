@@ -1,0 +1,14 @@
+{
+  "emptyFilenameError": "Nome do arquivo não pode ficar em branco.",
+  "fileType": "Tipo do Arquivo",
+  "filename": "Nome do Arquivo",
+  "formTitle": "Por favor especificar as dimensões, nome do arquivo, e o tipo desejado para a saída da imagem.",
+  "imageHeight": "Altura da Imagem (px)",
+  "imagePreview": "Prévia da Imagem",
+  "imageWidth": "Largura da Imagem (px)",
+  "keepAspectRatio": "Manter Proporção",
+  "loadingPreview": "Carregando Prévia...",
+  "minHeightError": "Valor mínimo válido para a altura é 100px.",
+  "minWidthError": "Valor mínimo válido para a largura é 100px.",
+  "showAnnotations": "Mostrar anotações"
+}
