@@ -2,6 +2,9 @@
   "About OHIF Viewer": "Cfaz Viewer - Sobre",
   "Browser": "Navegador",
   "Build number": "Número da compilação",
+  "Commit hash": "Commit hash",
+  "Data citation": "Data citation",
+  "Important links": "Links importantes",
   "Last master commits": "Últimos Commits na Master",
   "More details": "Mais detalhes",
   "Name": "Nome",
@@ -10,5 +13,6 @@
   "Repository URL": "URL do Repositório",
   "Value": "Valor",
   "Version information": "Informação da Versão",
+  "Version number": "Número da Versão",
   "Visit the forum": "Visite o fórum"
 }
