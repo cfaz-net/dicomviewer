@@ -95,7 +95,7 @@ function TrackedCornerstoneViewport(
 
     annotation.config.style.setViewportToolStyles(viewportId, {
       global: {
-        lineDash: '4,4',
+        lineDash: '',
       },
     });
 
