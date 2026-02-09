@@ -53,7 +53,7 @@ function Header({
 
   return (
     <IconPresentationProvider
-      size="large"
+      size="medium"
       IconContainer={ToolButton}
     >
       <NavBar
