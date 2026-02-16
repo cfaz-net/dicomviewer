@@ -53,34 +53,34 @@ function Header({
 
   return (
     <IconPresentationProvider
-      size="medium"
+      size="large"
       IconContainer={ToolButton}
     >
       <NavBar
         isSticky={isSticky}
         {...props}
       >
-        <div className="relative min-h-[52px] sm:min-h-[48px] flex flex-wrap items-center px-1 sm:px-2 gap-1 sm:gap-0">
-          <div className="flex items-center flex-shrink-0">
+        <div className="relative h-[48px] items-center">
+          <div className="absolute left-0 top-1/2 flex -translate-y-1/2 items-center">
             <div
               className={classNames(
-                'mr-2 sm:mr-3 inline-flex items-center',
+                'mr-3 inline-flex items-center',
                 isReturnEnabled && 'cursor-pointer'
               )}
               onClick={onClickReturn}
               data-cy="return-to-work-list"
             >
               {isReturnEnabled && <Icons.ArrowLeft className="text-primary ml-1 h-7 w-7" />}
-              <div className="ml-1 hidden sm:block">
+              <div className="ml-1">
                 {WhiteLabeling?.createLogoComponentFn?.(React, props) || <Icons.OHIFLogo />}
               </div>
             </div>
           </div>
-          <div className="hidden md:flex items-center h-8 flex-shrink-0">{Secondary}</div>
-          <div className="w-full sm:flex-1 flex items-center justify-center sm:justify-start min-h-[44px] sm:min-h-[40px] overflow-x-auto">
-            <div className="flex items-center space-x-0.5 sm:space-x-1 whitespace-nowrap">{children}</div>
+          <div className="absolute top-1/2 left-[250px] h-8 -translate-y-1/2">{Secondary}</div>
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+            <div className="flex items-center justify-center space-x-2">{children}</div>
           </div>
-          <div className="flex items-center select-none flex-shrink-0 gap-0.5 sm:gap-1">
+          <div className="absolute right-0 top-1/2 flex -translate-y-1/2 select-none items-center">
             {UndoRedo}
             <div className="border-primary-dark mx-1.5 h-[25px] border-r"></div>
             {PatientInfo}
@@ -109,7 +109,7 @@ function Header({
                       >
                         {IconComponent && (
                           <span className="flex h-4 w-4 items-center justify-center">
-                            <Icons.ByName name={IconComponent.name} />
+                            <Icons.ByName name={option.icon} />
                           </span>
                         )}
                         <span className="flex-1">{option.title}</span>
