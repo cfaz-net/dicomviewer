@@ -18,13 +18,15 @@ function ToolRowWrapper({ buttonSection, className = '', show = true }: ToolRowW
   }
 
   return (
-    <div className={`space-x-0.5 sm:space-x-1 flex flex-row flex-wrap items-center gap-0.5 sm:gap-1 ${className}`}>
+    <div
+      className={`flex flex-row flex-wrap items-center gap-0.5 space-x-0.5 sm:gap-1 sm:space-x-1 ${className}`}
+    >
       {toolbarButtons.map((button, index) => {
         const { id, Component, componentProps } = button;
         return (
           <div
             key={id || index}
-            className="flex-shrink-0 min-h-[40px] flex items-center"
+            className="flex min-h-[40px] flex-shrink-0 items-center"
           >
             <Component
               {...componentProps}

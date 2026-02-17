@@ -60,11 +60,11 @@ function Header({
         isSticky={isSticky}
         {...props}
       >
-        <div className="relative min-h-[52px] sm:min-h-[48px] flex flex-wrap items-center px-1 sm:px-2 gap-1 sm:gap-0">
-          <div className="flex items-center flex-shrink-0">
+        <div className="relative flex min-h-[52px] flex-wrap items-center gap-1 px-1 sm:min-h-[48px] sm:gap-0 sm:px-2">
+          <div className="flex flex-shrink-0 items-center">
             <div
               className={classNames(
-                'mr-2 sm:mr-3 inline-flex items-center',
+                'mr-2 inline-flex items-center sm:mr-3',
                 isReturnEnabled && 'cursor-pointer'
               )}
               onClick={onClickReturn}
@@ -76,11 +76,13 @@ function Header({
               </div>
             </div>
           </div>
-          <div className="hidden md:flex items-center h-8 flex-shrink-0">{Secondary}</div>
-          <div className="w-full sm:flex-1 flex items-center justify-center sm:justify-start min-h-[44px] sm:min-h-[40px] overflow-x-auto">
-            <div className="flex items-center space-x-0.5 sm:space-x-1 whitespace-nowrap">{children}</div>
+          <div className="hidden h-8 flex-shrink-0 items-center md:flex">{Secondary}</div>
+          <div className="flex min-h-[44px] w-full items-center justify-center overflow-x-auto sm:min-h-[40px] sm:flex-1 sm:justify-start">
+            <div className="flex items-center space-x-0.5 whitespace-nowrap sm:space-x-1">
+              {children}
+            </div>
           </div>
-          <div className="flex items-center select-none flex-shrink-0 gap-0.5 sm:gap-1">
+          <div className="flex flex-shrink-0 select-none items-center gap-0.5 sm:gap-1">
             {UndoRedo}
             <div className="border-primary-dark mx-1.5 h-[25px] border-r"></div>
             {PatientInfo}
@@ -109,7 +111,7 @@ function Header({
                       >
                         {IconComponent && (
                           <span className="flex h-4 w-4 items-center justify-center">
-                            <Icons.ByName name={IconComponent.name} />
+                            <Icons.ByName name={option.icon} />
                           </span>
                         )}
                         <span className="flex-1">{option.title}</span>
