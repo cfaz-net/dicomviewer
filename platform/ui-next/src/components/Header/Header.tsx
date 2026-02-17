@@ -53,34 +53,36 @@ function Header({
 
   return (
     <IconPresentationProvider
-      size="large"
+      size="medium"
       IconContainer={ToolButton}
     >
       <NavBar
         isSticky={isSticky}
         {...props}
       >
-        <div className="relative h-[48px] items-center">
-          <div className="absolute left-0 top-1/2 flex -translate-y-1/2 items-center">
+        <div className="relative flex min-h-[52px] flex-wrap items-center gap-1 px-1 sm:min-h-[48px] sm:gap-0 sm:px-2">
+          <div className="flex flex-shrink-0 items-center">
             <div
               className={classNames(
-                'mr-3 inline-flex items-center',
+                'mr-2 inline-flex items-center sm:mr-3',
                 isReturnEnabled && 'cursor-pointer'
               )}
               onClick={onClickReturn}
               data-cy="return-to-work-list"
             >
               {isReturnEnabled && <Icons.ArrowLeft className="text-primary ml-1 h-7 w-7" />}
-              <div className="ml-1">
+              <div className="ml-1 hidden sm:block">
                 {WhiteLabeling?.createLogoComponentFn?.(React, props) || <Icons.OHIFLogo />}
               </div>
             </div>
           </div>
-          <div className="absolute top-1/2 left-[250px] h-8 -translate-y-1/2">{Secondary}</div>
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
-            <div className="flex items-center justify-center space-x-2">{children}</div>
+          <div className="hidden h-8 flex-shrink-0 items-center md:flex">{Secondary}</div>
+          <div className="flex min-h-[44px] w-full items-center justify-center overflow-x-auto sm:min-h-[40px] sm:flex-1 sm:justify-start">
+            <div className="flex items-center space-x-0.5 whitespace-nowrap sm:space-x-1">
+              {children}
+            </div>
           </div>
-          <div className="absolute right-0 top-1/2 flex -translate-y-1/2 select-none items-center">
+          <div className="flex flex-shrink-0 select-none items-center gap-0.5 sm:gap-1">
             {UndoRedo}
             <div className="border-primary-dark mx-1.5 h-[25px] border-r"></div>
             {PatientInfo}
